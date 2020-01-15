@@ -20,5 +20,34 @@ body {
     width: 1100px;
 }
 .container .card {
-
+    width: 320px;
+    margin: 20px;
+    padding: 40px 30px;
+    border-radius: 40px;
+    background: #ebf5fc;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+                6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.container .card:hover {
+    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
+                inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.container .card .box {
+    position: relative;
+    text-align: center;
+}
+.container .card .box img {
+    max-width: 120px;
+}
+.container .card .content-box {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+.container .card:hover .box,
+.container .card:hover .content-box {
+    /* transform: scale(0.98); */
+}
+.container .card:hover h2 {
+    transform: scale(1.15);
 }
